@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Inter:wght@300&family=Kanit:ital,wght@0,400;1,300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s linear;
+}
+
+html{
+    font-size: 100%;
+    background: #183D3D;
+    overflow-x: hidden;
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    background: #272829;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: #fff;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+}
+
+.cabecalho .logo img{
+    height: 70px;
+    padding-top: 5px;
+    padding-left: 80px;
+    border-radius: 80px;
+}
+
+.cabecalho .opcoesCabecalho a{
+    margin: 0 40px;
+    font-size: 15px;
+    padding-right: 3px;
+    color: #D8D9DA;
+}
+
+.cabecalho .opcoesCabecalho a:hover{
+    color: #526D82;
+    border-bottom: 3px solid;
+    padding-bottom: 7px;
+    transition: .4s ease-in-out;
+}
+
+.parteBemVindo{
+    max-width: 300rem;
+    padding-top: 30px;
+}
+
+.parteBemVindo .informacoesBemVindo{
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.parteBemVindo img{
+    width: 30%;
+    border-radius: 100px;
+    opacity: 1;
+    animation: animateTest 2.5s;
+}
+
+@keyframes animateTest{
+    0%{
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    100%{
+        opacity: .9;
+    }
+}
+
+.parteBemVindo h2{
+    position: absolute;
+    color: #14141e;
+    font-size: 32px;
+    padding-left: 550px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.parteBemVindo p{
+    font-size: 20px;
+    line-height: 2;
+    color: #7F8487;
+    padding-left: 30px;
+    padding-top: 50px;
+} 
+
+.nossasEspecialidades{
+    max-width: 300rem;
+    padding-top: 140px;
+}
+
+.nossasEspecialidades h2{
+    position: absolute;
+    color: #14141e;
+    font-size: 30px;
+    padding-left: 550px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.nossasEspecialidades span{
+    padding-top: 5px;
+    color: #22A39F;
+}
+
+.nossasEspecialidades p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    color: #7F8487;
+    padding-top: 50px;
+}
+
+.nossasEspecialidades .imagensTrabalhos{
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.nossasEspecialidades .imagensTrabalhos img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+.nossasEspecialidades .imagensTrabalhos img:hover{
+    translate: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossasEspecialidades .todasArtes{
+    padding-left: 500px;
+    padding-bottom: 50px;
+}
+
+.nossasEspecialidades .todasArtes a{
+    margin-top: 7px;
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: #7F8487;
+    background: #14141e;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.nossasEspecialidades .todasArtes a:hover{
+    background: #434242;
+    letter-spacing: 1px;
+    color: #000; 
+}
+
+.nossosProfissionais{
+    max-width: 300rem;
+    padding-top: 140px;
+}
+
+.nossosProfissionais h1{
+    position: absolute;
+    color: #14141e;
+    font-size: 30px;
+    padding-left: 550px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.nossosProfissionais p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    color: #7F8487;
+    padding-top: 50px;
+}
+
+.nossosProfissionais .todosProfissionais{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais{
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 475px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais img{
+    height: 25rem;
+    width: 27rem;
+    border-radius: 80px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais h2{
+    padding-top: 70px;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 55px;
+    color: #410000;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais .redesProfissionais{
+    opacity: 0;
+    position: absolute;
+    top: 80px; left: 40px;
+    transition: 0.4s ease-in-out;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais:hover .redesProfissionais{
+    opacity: 1;
+    left: 60px;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais .redesProfissionais a{
+    display: block;
+    margin-bottom: 50px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 12px;
+    background-color: #acacac;
+    color: #183D3D;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.nossosProfissionais .todosProfissionais .informacaoProfissionais .redesProfissionais a:hover{
+    background-color: #14141e;
+    color: #1c5555;
+}
+
+.nossaLocalizacao{
+    max-width: 300rem;
+    padding-top: 30px;
+}
+
+.nossaLocalizacao h2{
+    position: absolute;
+    color: #14141e;
+    font-size: 32px;
+    padding-left: 500px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.nossaLocalizacao p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    color: #7F8487;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+
+.nossaLocalizacao .infoMapa{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nossaLocalizacao form{
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.nossaLocalizacao h3{
+    position: absolute;
+    color: #14141e;
+    font-size: 20px;
+    padding-left: 650px;
+    padding-top: 135px;
+    text-transform: uppercase;
+}
+
+.parteBemVindo .botaoWhats{
+    padding-left: 1200px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    animation: whats 1.8s infinite alternate-reverse;
+}
+
+.parteBemVindo .botaoWhats a{
+    margin-top: 7px;
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 40px;
+    border-radius: 7px;
+    color: #92b6c9;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    border-radius: 200%;
+}
+
+.parteBemVindo .botaoWhats a:hover{
+    color: #00ff00;
+}
+
+@keyframes whats{
+    0%{
+        transform: rotate(1deg);
+    }
+    10%{
+        transform: rotate(2deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+}
+
+.recomendacoes h1{
+    padding-top: 50px;
+    position: absolute;
+    color: #14141e;
+    font-size: 32px;
+    padding-left: 530px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.todasRecomendacoes .comentarios{
+    border-radius: .5rem;
+    background-color: #272829;
+    padding: 2rem;
+    margin-left: 5px;
+    margin-top: 130px;
+    margin-bottom: 5rem;
+    user-select: none;
+    transition: .5s ease-in-out;
+}
+
+.todasRecomendacoes .comentarios:hover{
+    transform: scale(1.1);
+}
+
+.todasRecomendacoes .comentarios p{
+    line-height: 2;
+    font-size: 14px;
+    color: #D8D9DA;
+}
+
+.todasRecomendacoes .comentarios .usuarios{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+
+.todasRecomendacoes .comentarios .usuarios img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.todasRecomendacoes .comentarios .usuarios h3{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.todasRecomendacoes .comentarios .usuarios i{
+    font-size: 15px;
+    color: #F4E869;
+}
+
+.nossosContatos .todosContatos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.nossosContatos .todosContatos .direcionamento h1{
+    padding-top: 40px;
+    font-size: 21px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.nossosContatos .todosContatos .direcionamento a{
+    display: block;
+    font-size: 15px;
+    color: #000;
+    padding: 8px 0;
+}
+
+.nossosContatos .todosContatos .direcionamento a i{
+    padding-right: 8px;
+    padding-left: 25px;
+    color: #22A39F;
+    transition: 0.3s ease-in-out;
+}
+
+.nossosContatos .todosContatos .direcionamento a:hover i{
+    padding-right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossosContatos .creditos{
+    padding: 10px; padding-top: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--light-color);
+    border-top: 2px solid #000;
+}
+
+.nossosContatos .creditos span{
+    color: #22A39F;
+}
+
+.kauan h1{
+    color: #00ff00;
+}

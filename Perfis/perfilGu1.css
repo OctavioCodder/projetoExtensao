@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Inter:wght@300&family=Kanit:ital,wght@0,400;1,300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s linear;
+}
+
+html{
+    font-size: 100%;
+    background: #183D3D;
+    overflow-x: hidden;
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+.perfil1 .botaoVoltar{
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+.perfil1 .botaoVoltar a{
+    margin-top: 7px;
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: #7F8487;
+    background: #14141e;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.perfil1 .botaoVoltar a:hover{
+    background: #434242;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.perfil1 .cabecalhoPerfil1{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.perfil1 .cabecalhoPerfil1 img{
+    width: 30%;
+    border-radius: 100px;
+    opacity: 1;
+    animation: animateTest 2.5s;
+}
+
+@keyframes animateTest{
+    0%{
+        opacity: 0;
+        transform: translate(-300px);
+    }
+    100%{
+        opacity: .9;
+    }
+}
+
+.perfil1 .cabecalhoPerfil1 h1{
+    position: absolute;
+    color: #14141e;
+    font-size: 32px;
+    padding-left: 480px;
+    padding-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.perfil1 .cabecalhoPerfil1 p{
+    font-size: 17px;
+    line-height: 2;
+    color: #7F8487;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.perfil1 .cabecalhoPerfil1 span{
+    color: #F5F5DC;
+}
+
+.perfil1 .cabecalhoPerfil1 a{
+    color: #FBF0B2;
+}
+
+.perfil1 .trabalhosGu{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-left: 120px;
+}
+
+.perfil1 .trabalhosGu img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+.perfil1 .botaoWhats{
+    padding-left: 1200px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    animation: whats 1.8s infinite alternate-reverse;
+}
+
+.perfil1 .botaoWhats a{
+    margin-top: 7px;
+    display: inline-block;
+    padding: 8px 8px;
+    font-size: 40px;
+    border-radius: 7px;
+    color: #92b6c9;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    border-radius: 200%;
+}
+
+.perfil1 .botaoWhats a:hover{
+    color: #00ff00;
+}
+
+@keyframes whats{
+    0%{
+        transform: rotate(1deg);
+    }
+    10%{
+        transform: rotate(2deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+}
